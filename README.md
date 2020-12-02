@@ -15,3 +15,7 @@
 
 ### Step
 - job안에서 순차적으로 실행되는 프로세스 단위
+
+
+### 참고
+- https://blog.aliencube.org/ko/2019/12/18/building-ci-cd-pipelines-with-github-actions/
