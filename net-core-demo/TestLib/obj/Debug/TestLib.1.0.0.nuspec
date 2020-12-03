@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TestLib</id>
+    <version>1.0.0</version>
+    <authors>zkdlu</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/luna/Practice/ci/github-action-example/net-core-demo/TestLib/bin/Debug/net5.0/TestLib.dll" target="lib/net5.0/TestLib.dll" />
+  </files>
+</package>
