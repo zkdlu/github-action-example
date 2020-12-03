@@ -18,7 +18,7 @@ jobs:
       with:
         dotnet-version: 5.0.100
     - name: Sec-Test
-      run: echo ${{secrets.TEST}}
+      run: echo ${{ secrets.TEST }}
     - name: Test
       run: ls -al
     - name: Build
