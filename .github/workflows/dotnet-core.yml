@@ -20,7 +20,7 @@ jobs:
     - name: Test-1
       run: ls -al
     - name: Test
-      run: cd net-core-demo/TestLib
+      run: cd ./net-core-demo/TestLib
     - name: Test2
       run: ls -al
     - name: Build
