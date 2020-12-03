@@ -19,3 +19,23 @@
 
 ### 참고
 - https://blog.aliencube.org/ko/2019/12/18/building-ci-cd-pipelines-with-github-actions/
+
+
+## 뇌피셜 (검증 필요)
+1. 프로젝트에서 공통으로 사용하는 라이브러리같은 경우 nuget이나 gradle, npm 같은 패키지 매니저에서 참조하여 사용함.
+2. 그래서 패키지가 변경 되면 빌드하고 패키지 매니저에 업로드를 해야 함.
+3. CI 툴은 이런 행위를 일련의 workflow로 자동화 함.
+
+## .NET Core에서 사용해보기
+### 1. Nuget에 패키지 수동으로 업로드 하기
+1. 클래스 라이브러리 프로젝트를 만든 후, .csproj 파일에 패키지 메타데이터 추가
+    ```.csproj
+    <PropertyGroup>
+      <PackageId>DemoLib</PackageId>
+      <Version>0.0.1</Version>
+      <Author>zkdlu</Author>
+      <Company>zkdlu</Company>
+    </PropertyGroup>
+    ```
+
+## Java에서 해보기
