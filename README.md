@@ -77,6 +77,7 @@ jobs:
     - name: Build
       run: dotnet build -c Release -o ./app/Release ./net-core-demo/TestLib
 ```
+> on: push or  on [push, pull_request]
 
 - Actions 탭에서 해당 작업 클릭하면 각 step별로 출력 결과 확인 가능
 
