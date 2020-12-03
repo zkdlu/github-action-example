@@ -17,11 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.301
-    - name: Test-1
-      run: ls -al
     - name: Test
-      run: cd ./net-core-demo/TestLib
-    - name: Test2
       run: ls -al
     - name: Build
-      run: dotnet build -c Release -o ./app/Release
+      run: dotnet build -c Release -o ./app/Release ./net-core-demo/TestLib
