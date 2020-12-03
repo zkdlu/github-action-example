@@ -78,4 +78,6 @@ jobs:
       run: dotnet build -c Release -o ./app/Release ./net-core-demo/TestLib
 ```
 
+- Actions 탭에서 해당 작업 클릭하면 각 step별로 출력 결과 확인 가능
+
 ## Java에서 해보기
