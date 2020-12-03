@@ -42,4 +42,11 @@
 3. 패키지 게시
     - API 키를 얻기 위해 nuget.org에 로그인하고 새로운 API 키를 만든다.
     - 만들어지면 복사를 선택해 액세스 키를 얻을 수 있음 (나중에 키를 다시 복사할 수 없으므로 안전한 위치에 저장 필요)
+    - dotnet nuget push로 게시
+        1. .nupkg를 포함하는 디렉토리로 이동한다. (dotnet pack 명령어 결과로 반환 됨)
+        2. 명령어 실행
+        ```
+        dotnet nuget push {.nupkg파일} --api-key {복사한 api키} --source https://api.nuget.org/v3/index.json
+        ```
+
 ## Java에서 해보기
