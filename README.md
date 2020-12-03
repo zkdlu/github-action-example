@@ -33,7 +33,7 @@
     <PropertyGroup>
       <PackageId>DemoLib</PackageId>
       <Version>0.0.1</Version>
-      <Author>zkdlu</Author>
+      <Authors>zkdlu</Authors>
       <Company>zkdlu</Company>
     </PropertyGroup>
     ```
