@@ -19,5 +19,7 @@ jobs:
         dotnet-version: 3.1.301
     - name: Test
       run: cd net-core-demo/TestLib
+    - name: Test2
+      run: ls -al
     - name: Build
       run: dotnet build -c Release -o ./app/Release
