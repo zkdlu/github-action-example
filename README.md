@@ -56,26 +56,26 @@
  > - cd 명령어로 이동이 안되서 기본 path에 빌드할 파일이 없으면 path 지정 해줘야 함
  > - version은 일치 시켜줘야 함
  
-     ```yml
-    name: .NET Core
-    on:
-      push:
-        branches: [ main ]
-      pull_request:
-        branches: [ main ]
-    jobs:
-      build:
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v2
-        - name: Setup .NET Core
-          uses: actions/setup-dotnet@v1
-          with:
-            dotnet-version: 5.0.100
-        - name: Test
-          run: ls -al
-        - name: Build
-          run: dotnet build -c Release -o ./app/Release ./net-core-demo/TestLib
-    ```
+```
+name: .NET Core
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.100
+    - name: Test
+      run: ls -al
+    - name: Build
+      run: dotnet build -c Release -o ./app/Release ./net-core-demo/TestLib
+```
 
 ## Java에서 해보기
