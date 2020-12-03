@@ -17,6 +17,8 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.100
+    - name: Sec-Test
+      run: echo ${{secrets.TEST}}
     - name: Test
       run: ls -al
     - name: Build
