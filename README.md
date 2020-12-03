@@ -37,5 +37,7 @@
       <Company>zkdlu</Company>
     </PropertyGroup>
     ```
+2. dotnet pack 명령어로 Nuget 패키지(.nupkg)를 빌드
+    > 빌드 시 패키지를 자동으로 생성하려면 <PropertyGroup>에 <GeneratePackageOnBuild>true</GeneratePackageOnBuild>를 추가한다.
 
 ## Java에서 해보기
