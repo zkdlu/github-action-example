@@ -39,5 +39,7 @@
     ```
 2. dotnet pack 명령어로 Nuget 패키지(.nupkg)를 빌드
     > 빌드 시 패키지를 자동으로 생성하려면 .csproj안 PropertyGroup 에 GeneratePackageOnBuild태그에 true 를 추가한다.
-
+3. 패키지 게시
+    - API 키를 얻기 위해 nuget.org에 로그인하고 새로운 API 키를 만든다.
+    - 만들어지면 복사를 선택해 액세스 키를 얻을 수 있음 (나중에 키를 다시 복사할 수 없으므로 안전한 위치에 저장 필요)
 ## Java에서 해보기
