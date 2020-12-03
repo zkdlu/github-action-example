@@ -55,7 +55,8 @@
  - 알아낸 것들
  > - cd 명령어로 이동이 안되서 기본 path에 빌드할 파일이 없으면 path 지정 해줘야 함
  > - version은 일치 시켜줘야 함
- 
+ > - on: push 또는 on [push, pull_request]
+ > - setting에 secrets의 값은 ${{ secrets.key }} 로 사용 가능 (api 키값 같은 거에 사용)
 ```
 name: .NET Core
 on:
@@ -77,7 +78,7 @@ jobs:
     - name: Build
       run: dotnet build -c Release -o ./app/Release ./net-core-demo/TestLib
 ```
-> on: push or  on [push, pull_request]
+
 
 - Actions 탭에서 해당 작업 클릭하면 각 step별로 출력 결과 확인 가능
 
