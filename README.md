@@ -55,6 +55,7 @@
  - 알아낸 것들
  > - cd 명령어로 이동이 안되서 기본 path에 빌드할 파일이 없으면 path 지정 해줘야 함
  > - version은 일치 시켜줘야 함
+ 
      ```yml
     name: .NET Core
     on:
