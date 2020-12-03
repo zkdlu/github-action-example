@@ -48,5 +48,6 @@
         ```
         dotnet nuget push {.nupkg파일} --api-key {복사한 api키} --source https://api.nuget.org/v3/index.json
         ```
+        > 게시가 되기까지 시간이 걸리는데 이메일로 알림이 온다.
 
 ## Java에서 해보기
