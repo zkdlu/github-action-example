@@ -17,7 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.301
-    - name: Install dependencies
-      run: dotnet restore
+    - name: Test
+      run: cd net-core-demo/TestLib
     - name: Build
       run: dotnet build -c Release -o ./app/Release
