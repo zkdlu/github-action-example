@@ -55,7 +55,7 @@
  ### 2. Github Action으로 자동으로 업로드 하기
  - 알아낸 것들
  > - cd 명령어로 이동이 안되서 기본 path에 빌드할 파일이 없으면 path 지정 해줘야 함
- > > - cd 'path' && 이런식으로 되더라.
+ > > - cd 'path' && 이런식으로 되더라. (별개의 태스크라서 그런 듯)
  > - version은 일치 시켜줘야 함
  > - on: push 또는 on [push, pull_request]
  > - setting에 secrets의 값은 ${{ secrets.key }} 로 사용 가능 (api 키값 같은 거에 사용)
