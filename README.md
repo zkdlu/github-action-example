@@ -85,3 +85,10 @@ jobs:
 - Actions 탭에서 해당 작업 클릭하면 각 step별로 출력 결과 확인 가능
 
 ## Java에서 해보기
+- maven central repository에 업로드 하여야 함.
+- 메이븐의 중앙 저장소에 올리려면 bintray 같은 대행 서비스를 사용하거나 저장소 관리 솔루션인 sonatype에서 제공하는 OSSRH(Open Source Project Repository Hosting)을 사용
+
+ > 꽤 복잡하네;;
+ 
+### 1. 수동으로 업로드 하기
+
