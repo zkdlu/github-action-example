@@ -1,4 +1,6 @@
 # Github Action
+[![actions-workflow-test][actions-workflow-test-badge]][actions-workflow-test]
+
 - github 저장소를 기반으로 소프트웨어 개발 Workflow를 자동화 할 수 있는 도구. (CI/CD 도구)
 - github 저장소에서 발생하는 build, test, package, release, deploy등 다양한 이벤트를 기반으로 직접 원하는 workflow를 만들 수 있다.
 - Workflow는 Runners라고 불리는 github에서 호스팅하는 머신의 Linux, macOs, Windows 환경, 컨테이너에서 실행 할 수 있다. 사용자 호스팅 환경에서 직접 구동 가능
