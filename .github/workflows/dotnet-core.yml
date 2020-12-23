@@ -26,5 +26,5 @@ jobs:
     - name: Download
       uses: actions/download-artifact@v1
       with:
-        name: TestLib
+        name: TestLib.dll
         path: ./app/Release
