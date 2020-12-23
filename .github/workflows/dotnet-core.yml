@@ -7,10 +7,8 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-
+  build-step:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core
@@ -28,3 +26,16 @@ jobs:
       with:
         name: app
         path: app/Release
+  deploy-step:
+    needs: build-step
+    runs-on: ubuntu-latest
+    steps:
+      - name: download
+        uses: actions/download-artifact@v1
+        with:
+          name: app
+          path: app/Release
+          
+      - name: deploy
+        run: cd app/Release && ls
+       
