@@ -23,8 +23,8 @@ jobs:
       run: ls -al
     - name: Build
       run: dotnet build -c Release -o ./app/Release ./net-core-demo/TestLib
-    - name: Download
-      uses: actions/download-artifact@v1
+    - name: Upload
+      uses: actions/upload-artifact@v1
       with:
-        name: TestLib.dll
-        path: ./app/Release
+        name: app
+        path: app/Release
